@@ -9,5 +9,6 @@
 ### 6. toggle 
 ### 7. toggle incomplete and complete
 
- ![alt text](image-1.png)
+![image](https://github.com/DipankarDDUT/ReactToDo/assets/26158187/2e0e3921-2780-477d-bfcd-842f486e7cf8)
+
 
