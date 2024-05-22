@@ -9,6 +9,5 @@
 ### 6. toggle 
 ### 7. toggle incomplete and complete
 
-![alt text](image.png)
- 
+ ![alt text](image-1.png)
 
