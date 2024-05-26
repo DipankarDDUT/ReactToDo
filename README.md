@@ -8,7 +8,9 @@
 ### 5. mark all completed button
 ### 6. toggle 
 ### 7. toggle incomplete and complete
+### 8. mark All incomplete
 
-![image](https://github.com/DipankarDDUT/ReactToDo/assets/26158187/2e0e3921-2780-477d-bfcd-842f486e7cf8)
+![alt text](image-2.png)
 
+ 
 

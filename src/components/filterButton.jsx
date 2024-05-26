@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { filterTodos,markAllCompleted } from '../redux/actions';
+import { filterTodos,markAllCompleted,markAllInCompleted } from '../redux/actions';
 
 const FilterButton = () =>{
 
@@ -23,6 +23,9 @@ const FilterButton = () =>{
           <button 
           onClick={()=>{ dispatch(markAllCompleted())}}
           className=' ml-3 p-2 bg-green-500 text-white rounded hover:bg-white-600 hover:text-green focus:outline-none'>Mark All Completed</button>
+         <button 
+          onClick={()=>{ dispatch(markAllInCompleted())}}
+          className=' ml-3 p-2 bg-yellow-500 text-white rounded hover:bg-white-600 hover:text-yellow focus:outline-none'>Mark All Incomplete</button>
         </div>
     )
 }

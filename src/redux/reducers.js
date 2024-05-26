@@ -7,7 +7,8 @@ import {
     MARK_INCOMPLETE,
     REMOVE_TODO,
     TOGGLE_TODO,
-    UPDATE_SEARCH_TERM
+    UPDATE_SEARCH_TERM,
+    MARK_ALL_INCOMPLETE
 } from './actionTypes';
 
 
@@ -25,7 +26,7 @@ const todoReducer = (state = initialState, action) => {
             return {
                 ...state,
                 todos: Array.isArray(state.todos)?[...state.todos, todos]:[todos]
-            };
+            };    
 
         case TOGGLE_TODO:
             return {
@@ -40,6 +41,11 @@ const todoReducer = (state = initialState, action) => {
                 ...state,
                 todos: state.todos.map((todo) => ({ ...todo, completed :true}))
             };
+       case MARK_ALL_INCOMPLETE:
+        return{
+            ...state,
+            todos:state.todos.map((todo)=>({...todo,completed:false }))
+        };
         case REMOVE_TODO:
             return {
                 ...state,
