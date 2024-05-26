@@ -55,9 +55,9 @@ const todoReducer = (state = initialState, action) => {
         case REMOVE_TODO:
             return {
                 ...state,
-                todos: state.todos.map((index) => {
-                    index != action.payload.id
-                })
+                todos: state.todos.map((todo,index) =>  index == action.payload.id?
+                {todo,completed:!(todo.completed)}
+                :todo)                                 
             };
         case MARK_COMPLETED:
             return {

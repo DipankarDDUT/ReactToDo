@@ -6,10 +6,9 @@
 #### 3. delete todo
 #### 4. filter option default, incomplete, complete
 #### 5. mark all completed button
-#### 6. toggle 
-#### 7. toggle incomplete and complete
-#### 8. mark All incomplete
-#### 9. Delete All
+#### 6. toggle incomplete and complete
+#### 7. mark All incomplete
+#### 8. Delete All
 
 
 
