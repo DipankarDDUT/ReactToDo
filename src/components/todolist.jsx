@@ -30,12 +30,12 @@ const TodoList = ()=>{
         const filter=state.state.filter ? state.state.filter:"";
         const searchTerm=state.state.searchTerm ?state.state.searchTerm.toLowerCase():"";
 
-        if(Array.isArray(todos)){
-            return todos.filter((todo)=>{
+        if(Array.isArray(todos) ){
+            return todos.length>0 &&  todos.filter((todo)=>{
             
                 const matchFilter = (filter === "COMPLETED" && todo.completed) || 
                 (filter ==="INCOMPLETE" && !todo.completed) || (filter==="ALL");
-                const matchSearch = todo.text.toLowerCase().includes(searchTerm);
+                const matchSearch = todo?.text?.toLowerCase().includes(searchTerm);
                 
                 return matchFilter && matchSearch;
             })
